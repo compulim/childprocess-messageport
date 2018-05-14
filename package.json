@@ -1,0 +1,39 @@
+{
+  "name": "childprocess-messageport",
+  "version": "1.0.0-0",
+  "description": "Turns ChildProcess IPC into MessagePort",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib --source-maps --ignore *.spec.js,*.test.js,src/__fixtures/*",
+    "build:all": "babel ./src --out-dir ./lib --source-maps",
+    "prepare": "rimraf lib && npm run build",
+    "test": "jest",
+    "version-commit": "npx gulp-cli version-commit"
+  },
+  "author": {
+    "email": "compulim@hotmail.com",
+    "name": "William Wong"
+  },
+  "keywords": [
+    "childprocess",
+    "messagechannel",
+    "messageport",
+    "webworker"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-exec": "^3.0.1",
+    "jest": "^22.4.3",
+    "last-commit-log": "^1.0.4-0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.5.0"
+  },
+  "dependencies": {
+    "websocket-util": "^1.1.0"
+  }
+}
