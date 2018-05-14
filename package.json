@@ -1,6 +1,6 @@
 {
   "name": "childprocess-messageport",
-  "version": "1.0.0-0",
+  "version": "1.0.0",
   "description": "Turns ChildProcess IPC into MessagePort",
   "main": "lib/index.js",
   "scripts": {
