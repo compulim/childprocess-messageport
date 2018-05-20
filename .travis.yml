@@ -6,7 +6,7 @@ before_script:
 before_deploy:
   - git config --local user.name "William Wong"
   - git config --local user.email "compulim@hotmail.com"
-  - npm run version-commit
+  - npx version-from-git --travis
 deploy:
   - provider: npm
     api_key:
